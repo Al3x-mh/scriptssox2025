@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+set -e
+set -u
+set -o pipefail
+
+if [ -r $1 ];
+
+then
+
+echo "El archivo tiene permisos de lectura"
+
+fi
+
+
+if [ -x $1 ];
+
+then
+
+echo "El archivo tiene permisos de ejecucion"
+
+fi
+
+
+if [ -w $1 ];
+
+then
+
+echo "El archivo tiene permisos de escritura"
+
+fi
