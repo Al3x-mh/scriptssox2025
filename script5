@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -e
+set -u
+set -o pipefail
+
+read var
+
+while [ $var != ":q" ]
+do
+   read var
+
+echo > archivo.txt; less archivo.txt
+done
