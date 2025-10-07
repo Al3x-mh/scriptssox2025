@@ -8,6 +8,5 @@ read var
 
 while [ $var != ":q" ]
 do
-   echo $var >> archivo.txt;
-   read var;
+echo $var > archivo.txt;
 done
