@@ -1,0 +1,14 @@
+#!/usr/bin/env
+
+set -e
+set -u
+set -o pipefail
+
+
+
+find ./ -maxdepth 1 | while read file;
+do
+if test -f $file; then
+echo "$file es un archivo"
+fi
+done
